@@ -5,6 +5,9 @@
 body{
     padding: 0;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
 }
 img{
     max-width: 100%;
@@ -14,8 +17,12 @@ img{
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 
-.header{
+nav{
+    all: unset;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,12 +31,11 @@ a{
     background-color: #1F2937;
     position: fixed;
     height: 10vh;
+    top: 0;
 }
 
 .page{
-    width: 100vw;
-    height: 100vh;
-    overflow-y: auto;
+    
 }
 .sectionOne{
     width: 100%;
@@ -39,8 +45,6 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* padding-top: 5vh; */
-    position: relative;
 }
 .title{
     font-family: 'Roboto', sans-serif;
@@ -112,12 +116,12 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 15vw;
+    margin-left: 15vw;
     color: #E5E7EB;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300; 
+    justify-self: flex-end;
 }
 .sectionTwo{
     width: 100%;
@@ -190,10 +194,6 @@ a{
 }
 .sectionFour{
     width: 100%;
-    height: 50vh;
-}
-.sectionFourContainer{
-    width: 100%;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -246,4 +246,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: #F9FAF8;
 }
